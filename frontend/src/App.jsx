@@ -7,6 +7,7 @@ import LandingPage from "./pages/LandingPage";
 import "bootstrap/dist/css/bootstrap.min.css";
 import QuizList from "./pages/QuizList";
 import QuizPage from "./pages/QuizPage";
+import Forum from "./pages/Forum";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/quiz/:quizId" element={<QuizPage />} />
           <Route path="/quiz" element={<QuizList />} />
+          <Route path="/forum" element={<Forum />} />
           {/* <Route path="/physics" element={<Physics />} />
           <Route path="/web-based-systems" element={<WebBasedSystems />} />
           <Route path="/courses" element={<Courses />} />
